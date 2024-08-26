@@ -1,0 +1,3602 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue,
+      Helvetica, Arial, Lucida Grande, sans-serif;
+  }
+
+  /** Notificaton Section **/
+
+  .div1 {
+    display: flex;
+    height: 15%;
+    width: 100%;
+    padding: 15px 0;
+    color: #333;
+    font-size: 14px;
+    background: #fef8d5;
+    font-weight: normal;
+  }
+
+  .info-image {
+    width: 17px;
+    height: 17px;
+    margin: 0 0 0 125px;
+  }
+
+  .div1 h5 {
+    color: #d71921;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .div1 p a{
+    text-decoration: underline;
+    color: #333333;
+  }
+
+  .div1 p a:hover {
+    background-color: rgb(246,246,246);
+    text-decoration: none;
+  }
+
+   /**      Large screens: The Nav Menu **/
+
+  nav {
+    display: flex;
+    background: #333333;
+    height: 60px;
+    color: #ccc;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .menu-items ul {
+    display: flex;
+    background-color: inherit;
+  }
+
+  .logo {
+    background: #d71921;
+    width: 90px;
+    height: 130px;
+    margin: 0 20px 0 20px;
+  }
+
+  .logo img {
+    margin-top: 62px;
+  }
+
+  @media screen and (min-width: 1024px){
+    .logo {
+      background: #d71921;
+      width: 90px;
+      height: 130px;
+      margin: 0 -80px 0 60px;
+      z-index: 1;
+    }
+  
+    .logo img {
+      margin-top: 62px;
+    }
+  }
+
+  .menu-items li {
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .menu-items label a{
+    position: relative;
+    background-color: #333;
+    margin: 3px 10px;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .menu-items label a:hover{
+    background-color: #212121;
+    height: 100vh;
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+  .main-dropdown img{
+    position: absolute;
+    z-index: 99;
+    transform: scale(0);
+    overflow: hidden;
+  }
+
+  .main-dropdown a:hover img {
+    display: block;
+    width: 3px;
+    height: 2px;
+    transform: translate(-50%, 50%) scale(2);
+    padding-left: 40px;
+    margin-top: 8px;
+  }
+
+  .where a:hover img {
+    padding-left: 65px;
+  }
+
+  .expe a:hover img {
+    padding-left: 55px;
+  }
+  
+  .book a:hover img {
+    padding-left: 30px;
+  }
+
+  .help a:hover img {
+    padding-left: 30px;
+  }
+
+  /* Styling the Links inside the main Drop-down */
+  /* .main-dropdown button {
+
+  } */
+  .dropdown-content{
+    height: 300px;
+  }
+  .dropdown-content > div{
+    display: flex;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-1 a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-1 {
+    display: block;
+}
+
+  /* Style the dropdown button */
+  .dropdown-content button {
+    display: block;
+    font-size: 14px;
+  }
+
+  .dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  /* Styling the Links beside the Nav Menu */
+
+  .other-links ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 4px 2px;
+    margin: 15px 7px 5px 20vh;
+  }
+  .other-links a {
+    display: inline-flex;
+    overflow: hidden;
+    background-color: auto;
+  }
+  .other-links a>i{
+    color: white;
+    padding: 2px 6px;
+  }
+
+  .other-links img{
+    width: 16px;
+    height: 12px;
+    padding: 2px 6px;
+  }
+
+  .other-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 5px 8px;
+  }
+  .small-screen{
+    display: none;
+  }
+
+/* Medium Screens: Small Laptops and Tabs*/
+
+@media only screen and (max-width: 1200px) and (min-width: 1031px) {
+  nav {
+    display: flex;
+    background: #333333;
+    height: 60px;
+    color: #ccc;
+    padding: 0;
+  }
+
+  .logo {
+    background: #d71921;
+    width: 90px;
+    height: 130px;
+    margin: 0 -30px 0 80px;
+    z-index: 1;
+  }
+
+  /* Styling the Links beside the Nav Menu */
+
+  .other-links ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 2px 1px;
+    margin: 15px 7px 5px 30px;
+  }
+
+  .other-links img{
+    width: 16px;
+    height: 12px;
+    padding: 2px 3px;
+  }
+
+  .other-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 3px 2px;
+  }
+}
+
+/*******   Small screens    *******/
+
+  @media screen and (max-width: 1030px) {
+    nav {
+      display: flex;
+      background: #333333;
+      height: 60px;
+      color: #ccc;
+    }
+
+    .menu-items {
+      display: none;
+    }
+  
+    .logo {
+    z-index: 1;
+      background: #d71921;
+      width: 90px;
+      height: 120px;
+      margin: 0 20px 0 20px;
+    }
+  
+    .logo img {
+      margin-top: 62px;
+    }
+
+    .other-links ul {
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      padding: 4px 2px;
+      margin: 0;
+      
+    }
+    .other-links a {
+      display: inline-flex;
+      overflow: hidden;
+      background-color: auto;
+    }
+  
+    .other-links img{
+      width: 16px;
+      height: 12px;
+      padding: 2px 6px;
+    }
+  
+    .other-links ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 5px 8px;
+    }
+  
+  .other-links ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 5px 8px;
+    }
+  }
+/* login css */
+  .login-page{
+    height: 100vh;
+    justify-content: center;
+ }
+ .nav-login{
+   width: 100%;
+   background-color:#333333 ;
+   height: auto;
+ }
+ .nav-login-logo{
+   background: rgb(212, 29,40);
+   height:60px ;
+   width: 170px;
+   position: relative;
+   right: 400px;
+ }
+ .nav-login-logo h2{
+   font-size: 35px;
+   text-align: center;
+   position: relative;
+   top: 10px;
+   font-family: 'Philosopher', sans-serif;
+   font-weight: bold;
+   color: white;
+   
+ }
+ .login-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   position: relative;
+   top: 30px;
+   align-items: center;
+   background-color: rgb(250,250,250);
+ }
+
+ .login-text{
+   width: 60%;
+   text-align: center;
+ }
+ .login-text h1{
+   font-size: 45px;
+   font-family: 'Philosopher', sans-serif;
+   font-weight: 800;
+ }
+ .login-text p{
+   width: 63%;
+   margin-left: 180px;
+   position: relative;
+   top: 10px;
+   font-size: 18px;
+ }
+ .login-sub-cont{
+   width: 80%;
+   border: 1px solid #ccc;
+   border-radius: 2px;
+   position: relative;
+   top: 40px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   height: auto;
+   background-color: white;
+   padding:  20px 0;
+ }
+ .login-sub-cont1{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   width: 350px;
+   
+ }
+ .login-sub-cont1 h4{
+   font-size: 20px;
+   position: relative;
+   top: 4px;
+ }
+ 
+ .login-sub-cont1 > input[type="text"]{
+   width: 330px;
+   height: 55px;
+   border: 1px solid rgb(54, 52, 52);
+ }
+ .login-sub-cont1 > input[placeholder="Email or Emirates Skywards number"]{
+   padding-left: 15px;
+   font-size: 16px;
+}
+.login-sub-cont1 > input[placeholder="Password"]{
+   padding-left: 15px;
+   font-size: 16px;
+}
+.login-sub-cont1 > input:hover[type="text"]{
+   box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+}
+.login-sub-cont1 p{
+   position: relative;
+   top: -10px;
+   right: 3px;
+   font-size: 14px;
+   display: flex;
+   gap: 10px;
+   
+}
+.login-sub-cont1 >p > input{
+   position: relative;
+   padding: 5px;
+   font-size: 30px;
+   transform: scale(1.5);
+   accent-color:red;
+   font-size: 30px;
+   border: 5px solid grey;
+}
+
+.login-sub-cont1 button{
+   position: relative;
+   top: -7px;
+   height: 50px;
+   background-color: #c60c30;
+   border: none;
+   border-radius: 5px;
+   color: white;
+}
+.login-sub-cont1 button:hover{
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.login-sub-cont2{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.login-sub-cont2 >div:nth-child(1),
+.login-sub-cont2 >div:nth-child(3){
+   height: 38%;
+   width: 1px;
+   background-color: #ccc;
+}
+
+ .login-sub-cont2 i{
+   border: 1px solid #ccc;
+   width: 40px;
+   height: 40px;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100%;
+   color: #ccc;  
+   position: relative;
+   
+
+ }
+
+
+ .login-sub-cont3{
+   width: 300px;
+   position: relative;
+   top: 100px;
+   left: -25px;
+   display: flex;
+   flex-direction: column;
+
+ }
+ .login-sub-cont3 h4{
+   width: 80%;
+ }
+ .login-sub-cont3 p{
+   position: relative;
+   top: 10px;
+   width: 110%;
+   font-size: 16px;
+ }
+ .login-sub-cont3 a{
+   color: inherit;
+ }
+ .Before-footer{
+    background-color: rgb(31, 30, 30);
+    color: grey;
+    height: 50px;
+    position: relative;
+    top:40px ;
+ }
+ .before-div{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 170px;
+    gap: 20px;
+    top: 15px;
+ }
+ .before-div h4{
+    font-size: 20px;
+    color: #adabab;
+ }
+ .before-div i{
+    font-size: 12px;
+    position: relative;
+    top: 7px;
+ }
+ .before-div p{
+    margin-top: 5px;
+ }
+ 
+ .signUpLink{
+   position: relative;
+   top: 30px;
+   left: -10px;
+   text-decoration: none;
+   height: 40px;
+   width: 350px;
+   display: flex;
+   border: 1px solid black;
+   border-radius: 3px;
+   align-items: center;
+   justify-content: center;
+ }
+ .signUpLink:hover{
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+ }
+
+
+
+ /* signUp link */
+ .signUp-link{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 20px;
+
+  }
+ .signUp-link ul{
+    display: flex;
+    font-size: 13px;
+    list-style: none;
+    margin-left: 20px;
+    gap: 25px;
+    
+  }
+  .signUp-link .fa-circle{
+   position: relative;
+   top: -2px;
+  }
+  .signUp-link button{
+    height: 35px;
+    width: 110px;
+    margin-left: 100px;
+    background-color: #d71921;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: -7px;
+  }
+  
+.background-login{
+    height: 135vh;
+    position: relative;
+    top: 20px;
+    background-image: url(./media/ghaf-tree-background-w512x768.avif);
+    background-size: contain;
+    
+         &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(126, 124, 124, 1) 50%, rgb(216, 213, 213) 70%, rgb(255, 255, 255) 100%);
+            filter: brightness(95%);
+            background-blend-mode: screen, difference, overlay;
+        }
+    
+} 
+
+.signUp-container{
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 130px;
+    
+}
+.signUp-text{
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.signUp-text h6{
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+.signUp-text h1{
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 46px;
+    font-weight: 800;
+    
+}
+.signUp-text p{
+    width: 95%;
+}
+
+.form-container{
+    position: relative;
+    top: 50px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    height: 700px;
+    width: 60%;
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+}
+.form1{
+    display: flex;
+    justify-content: space-around;
+    color: #555353;
+}
+.form1 >div > input{
+    border: 1px solid #ccc;
+    height: 50px;  
+    border-radius: 3px;
+}
+.form1 > div ::placeholder{
+    padding-left:  15px;
+    font-size: 15px;
+}
+.form1 > div > input[placeholder="Title"]{
+    width: 100px;
+}
+.form1 > div > input[placeholder="First name"]{
+    width: 250px;
+}
+.form1 > div > input[placeholder="Last name"]{
+    width: 250px;
+}
+
+.form1 >div .fa-chevron-down{
+    margin-left: -20px;
+    font-size: 9px;
+    position: absolute;
+    top: 50px;
+  
+    
+}
+.form1 > div :hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.form2{
+    padding: 5px;
+    font-size: 12px;
+}
+.form3{
+    display: flex;
+    justify-content: space-around;
+    color: #555353;
+}
+.form3 >div >input{
+    border: 1px solid #ccc;
+    height: 50px;  
+    border-radius: 3px;
+    width: 310px;
+
+}
+.form3 > div > input::placeholder{
+    padding-left:15px;
+    font-size: 15px;
+}
+.form3 > div:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+.form3 > div > input[type="email"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+.form3 > div > input[type="email"]::-webkit-search-cancel-button,
+.form3 > div > input[type="email"]::-webkit-search-clear-button,
+.form3 > div > input[type="email"]::-webkit-search-results-button,
+.form1 > div > input[type="email"]::-webkit-search-results-decoration {
+    display: none !important;
+}
+
+
+.form4{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #555353;
+}
+.form4 >div{
+    border: 1px solid #ccc;
+    height: 60px;  
+    border-radius: 3px;
+    width: 310px;
+
+}
+.form4 > div:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+.form4a{
+    display: flex;
+    flex-direction: column;
+}
+.form4a > div:first-child{
+    position: relative;
+    top: 3px;
+    right: -18px;
+    padding-right: -50px;
+    font-size: 13px;
+}
+.form4a>div:last-child{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    top: 20px;
+    margin-right: 90px;
+    font-size: 18px;
+    
+}
+
+
+
+.form4b{
+    display: flex;
+    flex-direction: column;
+}
+.form4b >div:first-child{
+    
+    padding-left: 20px;
+    font-size: 12.5px;
+    position: relative;
+    top: 5px;
+}
+.form4b > div:last-child{
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+ .form4b > div:last-child i{
+    margin-left: 200px;
+    position: absolute;
+    font-size: 9px;
+    padding-top: -4px;
+ }           
+
+ .form5{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #555353;
+}
+.form5 >div{
+    border: 1px solid #ccc;
+    height: 60px;  
+    border-radius: 3px;
+}
+.form5 >div:first-child{
+    width: 280px;
+}
+.form5 >div:nth-child(2){
+    width: 140px;
+}
+.form5 >div:last-child{
+    width: 190px;
+}
+.form5 > div h5{
+    padding-left:  20px;
+    position: relative;
+    top: 20px;
+
+}
+.form5 >div:nth-child(2)> div{
+    font-size:12.5px ;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+.form5 >div:nth-child(2) h5{
+    font-size: 18px;
+    position: relative;
+    top: 15px;
+}
+.form5 >div:first-child .fa-chevron-down{
+    margin-left: 110px;
+    font-size: 9px;
+}
+.form5 > div:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+.form6 >div > input{
+    margin-top: 20px;
+    height:60px ;
+    border: 1px solid#ccc;
+    border-radius: 3px;  
+    width: 420px;
+    margin-right: 20px;
+}
+
+.form6 > div >input::placeholder{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.form6 > div > input:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+.form7{
+    font-size:12px ;
+    position: relative;
+    top: 20px;
+}
+.form7 > input{
+    font-size: 30px;
+    margin-top: 10px;
+    
+}
+#checkButton{
+    accent-color: #d71921;
+
+    font-size: 30px;
+
+    border: 5px solid grey;
+}
+
+
+.form8{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+    
+}
+.form8 >div > input{
+    position: relative;
+    top: -1px;
+    font-size: 20px;
+    transform: scale(1.5);
+}
+.form8 > p > a{
+    color: inherit;
+}
+
+.form8 >p{
+    font-size: 13px;
+}
+.form9{
+   position: relative;
+   top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+.form9 >div > input{
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+    transform: scale(1.5);
+}
+.form9 > p > a{
+    color: inherit;
+}
+
+.form9 >p{
+    font-size: 13px;
+    line-height: normal;
+}
+.form9 >p >.fa-info{
+    transform: scale(0.8);
+    padding: 5px;
+    border: 1px solid;
+    width: 10px;
+    height: 10px;
+    color:inherit;
+    border-radius: 100%;
+    text-align: center;
+
+}
+.form10{
+    font-size: 14px;
+    position: relative;
+    top: 50px;
+}
+.form10 >a{
+    color: inherit;
+}
+.form10 > i{
+    font-size: 12px;
+    color: inherit;
+}
+.form11 button{
+    position: relative;
+    top: 90px;
+    display: flex;
+    width: 250px;
+    height: 40px;
+    margin: auto;
+   align-items: center;
+   padding-left: 65px;
+   font-size: 15px;
+   color: white;
+   background-color: #d71921;
+   border: none;
+   border-radius: 5px;
+
+}
+.form11 button:hover{
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+}
+/* footer sign up */
+.footer-login{
+    position: absolute;
+    display: flex;
+    top: 1050px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(40, 40, 40);
+    /* padding:  5px 100px; */
+    color: grey; 
+    
+}
+.footer-login-text{
+    display: flex;
+    position: relative;
+    left: 180px;
+    top: 10px;
+    gap: 5px;
+}
+.footer-login i{
+    font-size: 10px;
+    position: relative;
+    top: 10px;
+}
+.footer-login a{
+    color: grey;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    top: 8px;
+    font-family: 'Philosopher', sans-serif;
+}
+.footer-login a:hover{
+    color: white;
+    text-decoration: underline;
+    
+}
+.footer-login a:first-child{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px; 
+    top: 5px;
+}
+.footer-login p{
+    font-size: 13.5px;
+    position: relative;
+    bottom: -8px;
+
+}
+
+
+
+  /* Emirate container */
+  .emirate-container{
+    height: 100vh;
+     width: 100%;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+ 
+ }
+ .emirate-container-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 460px;
+}
+
+.emirate-container-image::before {
+    content: "";
+    background-image: url(./media/emirates-premium-economy-seat-w1920x480.jpg);
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.emirate-big{
+    display: flex;
+    justify-content: space-around;
+     
+}
+.emirate-big > div{
+    position: relative;
+    top: 150px;
+}
+.emirate-text{
+    position: absolute;
+    width: 50%;
+    left: 40px;
+    font-family:  'Philosopher', sans-serif;;
+    color: white;
+    letter-spacing: 1px;
+
+}
+.emirate-text h1{
+    font-size: 30px;
+}
+.span1{
+    display: block;
+    margin-top: 5px;
+    font-size: 50px;
+}
+.span2{
+    display: block;
+    position: relative;
+    left: 160px;
+}
+ .emirate-text >.custom-link{
+    position: relative;
+    top: 30px;
+    left: 395px;
+    text-decoration: none;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    background-color:#d71921 ;
+}
+.emirate-text > .custom-link:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  }
+ .emirate-image{
+    position: absolute;
+    left: 150px;
+
+ } 
+ .emirate-image img{
+    height: 50px;
+    
+ }
+ .emirate-image a{
+    position: relative;
+    top:-120px;
+ }
+ .emirate-feedback a{
+    display: flex;
+   flex-direction: row;
+    border: 1px solid;
+    background-color: white;
+    color:#555353;
+    align-items: center;
+    width: 40px;
+    height: 105px;
+    position: fixed;
+    left: 1310px;
+    top: 200px;
+    z-index: 9999;
+   
+ }
+ .emirate-feedback h6{
+    position: absolute;
+    top: 50px;
+    left: 8px;
+    writing-mode:vertical-lr;
+    font-size: 10px;
+    transform:translateY(-50%) rotate(180deg);
+ }
+ .emirate-feedback i{
+    margin-bottom: -65px;
+    margin-left: 7px;
+ }
+
+ .product-container{
+     width: 80%;
+     position: absolute;
+     top: 57%;
+     left: 10%;
+     background: white;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+ .products{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+   
+ }
+ .product-item1{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     
+ }
+ .product-item1 >div{
+     display: flex;
+     flex-direction: row;
+     height: 50px;
+     width: 210px;
+     align-items: center;
+     gap: 6px;
+     padding: 5px 28.7px;
+     position: relative;
+     border: 1px solid #ccc;
+ 
+ }
+ 
+ .product-item1 >div:not(:first-child){
+     color: #555353;
+ } 
+ .product-item1 >div:first-child{
+     border-bottom-width: 3px;
+     border-bottom-color:#c60c30 ;
+     font-weight: 600;
+ }
+ .product-item1 >div:hover{
+     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+     
+ }
+ 
+ .product-item2{
+   margin: 10px;
+ }
+ .product-item2 > div{
+     display: flex;
+     flex-direction: row;
+     
+ }
+ .product-item2 > div > div{
+     display: flex;
+     flex-direction: row;
+     height: 30px;
+     width: 165px;
+     border: 1px solid #969595;
+     border-radius: 2px;
+     text-align: center;
+     align-items: center;  
+     overflow: hidden; 
+     
+ }
+ .product-item2 > div :hover{
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .product-item2 > div >div > p >i{ 
+     margin-right: 5px;
+     color: #c60c30;
+     font-weight: bold;
+ }
+ .product-item2 > div > div > p{
+     margin: 0;
+     padding: 30px;
+ }
+ .product-item2 > div > div >.para{
+     font-weight: 600;
+ }
+ .product-item3 > a{
+     margin: 10px;
+     float: right;
+     color: #c60c30;
+     font-size: 15px;
+ }
+ .product-item3 > a:hover{
+     background:rgb(231, 225, 225);
+ 
+ }
+ .product-item3 .fa{
+     font-size: 10px;
+     margin: 5px;
+ }
+ .product-item4{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-bottom: 30px;
+     color: #555353;
+     font-weight: lighter;
+     
+ }
+ 
+ .product-item4 > .input{
+     display: flex;
+     flex-direction: column;
+     height: 60px;
+     width: 350px;
+     border: 1px solid #969595;
+     border-radius: 2px;
+     padding-left: 30px;
+ }
+ .product-item4 >.input >p{
+     margin-top: 1px;
+     font-size: 14px;
+ }
+ .product-item4 .inp{
+     display: flex;
+     flex-direction: row;
+ }
+ .inp > p{
+     font-size: 20px;
+     margin-top: 20px;
+ }
+  .product-item4 .fa-xmark{
+     margin-left: 190px;
+     margin-top: 20px;
+  }
+  .product-item4 > .input  .fa-location-dot{
+     font-size: 15px;
+     margin: 19px 5px;
+  }
+ 
+ .product-item4 > .input:hover{
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .product-item4 >.input2{
+     height: 60px;
+     width:350px ;
+     border: 1px solid #969595;
+     border-radius: 2px;
+     padding-left: 30px;
+     color: #555353;
+ }
+ .input2 p{
+     font-size: 20px;
+     margin-top: 30px;
+ }
+ 
+ .product-item4 > .input2:hover{
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+ .product-item4 button{
+     height: 60px;
+     width: 200px;
+     background-color:#c60c30;
+     color: white;
+     font-size: 16px;
+     text-transform: capitalize;
+     border: none;
+     border-radius: 3px;
+ }
+ .product-item4  button:hover{
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+ }
+ 
+ 
+ /* service */
+ .service{
+     width: 80%;
+     height: auto;
+     position: relative;
+     background: white;
+     top: 200px;
+     left: 10%;
+     display: grid;
+     align-items: center;
+     text-align: center;
+     /* margin-top: 40px; */
+     
+ 
+ }
+ .service-item{
+     display: flex;
+     flex-direction: row;
+     align-items: center; 
+     justify-content: center;
+     color: #555353;
+ }
+ 
+ .items{
+     height: 100px;
+     width: 100px;
+     padding: 10px;
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;  
+     text-align: center;
+     border: 1px solid #969595;
+ }
+ 
+ .icons{
+     font-size: 22px;
+     text-align: center;
+     margin-top: 10px;
+     
+ 
+ }
+ .icon-items a{
+     font-size: 13.7px;
+     padding-right: 10px;
+     color: #555353;
+     
+ }
+ 
+ 
+ .items:hover{
+     color: black;
+     font-weight: 500;
+     border-bottom: 3px solid #c60c30;
+ }
+ .items:hover .icon-items a{
+     color: black;
+     font-weight: 600;
+ }
+ 
+ .image{
+     position: relative;
+     background-image: url(../media/background-test-tier.png);
+     background-repeat: no-repeat;
+     height: 70px;
+     width: 80%;
+     top: 230px;
+     left: 130px;
+     background-color: #0c0b0b;
+     border-radius: 5px;
+     display: flex;
+     justify-content: space-around;
+     color: white;
+     
+ }
+ .image::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(0,0,0,0.5);
+     border-radius: 5px;
+ }
+ 
+ .image img{
+     position:relative;
+     height: 95px;
+     width: 250px;
+     bottom: 20%;
+     left: 5px;
+     border-color: white;
+ }
+ .image-text{
+     color: white;
+     filter: brightness(100%);
+ }
+ .image-text h3{
+     text-transform: capitalize;
+     margin-top: 12px ;
+ }
+ .image-text p{
+
+     font-size: 14px;
+ }
+ .image button{
+     margin-top: 30px;
+     margin-right: 8px;
+     background: white;
+     filter: brightness(100%);
+     border: none;
+     height: 30px;
+     width: 150px;
+     border-radius: 3px;
+     font-weight: 600;
+ }
+
+ /* destination css */
+ .destination-section {
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: 5rem;
+    margin-top: 17rem;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.heading {
+  font-family:  HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 100;
+  color: #333;
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 2rem;
+  line-height: 0;
+  letter-spacing: 0;
+
+}
+
+.heading span {
+  font-weight: 600;
+  letter-spacing: 0;
+
+}
+
+
+.destination {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 50px;
+      max-width: 100%;
+      grid-gap: 45px;
+      height: 100%;
+      padding-bottom: 1.5rem;
+
+      
+  
+}
+
+#destination {
+  background-color: whitesmoke;
+  width: 29rem;
+  height: 18rem;
+  border-radius: 0.2rem;
+  box-shadow:  0 -1px 5px #948888;
+  
+
+}
+
+#destination:hover {
+  box-shadow:  0 -1px 10px #948888;
+
+}
+
+.destination-img {
+  height: 50%;
+  width: 100%;
+  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+
+
+}
+
+.destination-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.arab-text {
+  font-family: HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande, sans-serif;
+  font-size: 9px;
+  font-weight: 550; 
+  line-height: 1.7rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.destination-text h3 {
+  font-family: Emirates-Bold,Helvetica,Arial,Lucida Grande,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0;
+  margin-top: 0;
+
+}
+.button-and-route {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-left: 20rem;
+    margin-top: 15px;
+  }
+  
+  .destination-button {
+    background-color: white;
+    padding: 10px;
+    width: 250px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+    margin-top: 0.1rem;
+  }
+  .destination-button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .button-and-route a {
+    color: rgb(63, 62, 62);
+    font-size: 13px;
+    position: relative;
+    top: 13px;
+    text-decoration: none;
+  }
+  .button-and-route a:hover{
+    text-decoration: underline;
+  }
+
+.arab-text2 {
+  font-family:  HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  font-size: 0.9rem;
+  font-weight: 550;
+  letter-spacing: 0;
+  line-height: 3rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+/* Discount section */
+.discount-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: -3.5rem;
+    margin-bottom: 6rem; 
+  }
+  
+  .discount-section::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: 0;
+    width: 100%;
+    height: 430px;
+    margin-top: 4rem;
+    background: url(./media/four-sections-images/couple.webp) no-repeat center center/cover;
+    filter: brightness(0.6);
+  }
+  
+  .couples-offer {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+    
+  }
+  
+  .couples-offer p:nth-of-type(1) {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    line-height: 1rem;
+    opacity: 0.7;
+  }
+  
+  .couples-offer h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 2.2rem;
+    letter-spacing: 1px;
+    line-height: 4rem;
+    margin-left: 0.7rem;
+  }
+  
+  .couples-offer div {
+    background-color: #d71921;
+    width: 65px;
+    height: 1.5px;
+    margin-left: 36rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .couples-offer p:nth-of-type(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 530;
+    letter-spacing: 0.5px;
+    line-height: 2rem;
+    margin: 0;
+  }
+  
+  .btn {
+    height: 40px;
+    margin-left: 30rem;
+    margin-top: 7.4rem;
+    background-color: white;
+    color: black;
+    padding: 3px 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid #333333;
+  
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(53, 53, 54, 0.493);
+    background-color: white;
+    color: black;
+  }
+
+  /* booking css */
+  
+.booking-class-section .explore-emirate {
+    background-image: url(./media/four-sections-images/whiteimg-d1920x1159.jpg);
+    display: grid;
+    place-items: center;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 46rem;
+    
+  
+  }
+  
+  .fly-with-emirate-text {
+     line-height: 3rem;
+     margin-bottom: 1rem 1rem;
+     
+  }
+  
+  
+  .fly-with-emirate-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 100%;
+  }
+  
+  .container1 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container2 {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(auto);
+    grid-gap: 5px;
+    place-items: center;
+  
+  }
+  
+  .dubai-experience {
+    position: relative;
+  }
+  
+  .dubai-experience div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: fit-content;
+    max-height: fit-content;
+  
+  }
+  
+  .cab {
+    position: relative;
+    
+  }
+  
+  .cab div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+  
+  .cabin {
+    position: relative;
+  }
+  
+  .cabin div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+  
+  .features {
+    position: relative;
+  
+  }
+  
+  .features div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+  
+  .economy {
+    position: relative;
+  
+  }
+  
+  .economy div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+  
+  .fly-with-emirate-img img.first{
+    width: 475px;
+    height: 490px;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(193, 190, 190);
+    margin-right: -1px;
+    
+  }
+  
+  .fly-with-emirate-img img.first:hover{
+    box-shadow:  0 -1px 10px #948888;
+  
+  }
+  
+  .fly-with-emirate-img img.others {
+    width: 240px;
+    height: 240px;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(193, 190, 190);
+    margin-right: 5px;
+  }
+  
+  .fly-with-emirate-img img.others:hover{
+    box-shadow:  0 -1px 10px #948888;
+  
+  }
+  
+  .emirate-paragraph {
+    font-family: HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande, sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 600; 
+    line-height: 2rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #666;
+  }
+  
+  .fly-with-emirate-text h2 {
+    font-family:  Emirates-Bold,Helvetica,Arial,Lucida Grande,sans-serif;
+    text-align: center;
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1rem;
+    color: #333;
+    margin: 1.5rem 0;
+    font-style: normal;
+  
+  }
+  
+  .emirate-paragraph2 {
+    font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size: 0.8rem;
+    line-height: 3rem;
+    font-weight: 100;
+    color: #666;
+    display: block;
+    text-align: center;
+  }
+  
+  .dubai-exp {
+    font-family: HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande, sans-serif;
+    font-size: 9px;
+    font-weight: 600; 
+    line-height: 5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 5rem;
+    margin-left: 2.2rem;
+    text-align: left;
+    
+  }
+  
+  .dubai-experience h2 {
+    font-family:  Emirates-Bold,Helvetica,Arial,Lucida Grande,sans-serif;
+    display: block;
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: 3rem;
+    text-align: left;
+    margin-left: 2.2rem;
+    letter-spacing: normal;
+    margin-top: -1rem;
+  }
+  
+  .dubai-experience h2::after {
+    content: "";
+    background-color: #d71921;
+    width: 65px;
+    height: 1.5px;
+    margin-left: -1.5px;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  .learn {
+    font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    color: #666;
+    font-weight: 300;
+    font-size: 0.7rem;
+    display: inline-block;
+    line-height: 1rem;
+    margin-left: 2.2rem;
+    line-height: 1rem;
+  }
+  
+  .container2 h2::after {
+    content: "";
+    background-color: #d71921;
+    width: 65px;
+    height: 1.5px;
+    display: block;
+    margin: 0.5rem 0 0 -7px;
+  
+    
+  }
+  
+  .cabin-features {
+    font-family: HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande, sans-serif;
+    font-size: 9px;
+    font-weight: 600; 
+    text-transform: uppercase;
+    color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    margin: 0.5rem 0 0 3.5rem;
+    
+  }
+  
+  .classes {
+    font-family: Emirates-Bold,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    font-style: normal;
+    font-weight: 550;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    letter-spacing: 0.5px;
+    margin: 0.1rem 0 0 3.5rem;
+  
+  
+  }
+  
+  .learn-more {
+    font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 1rem 0 0 3rem;
+    color: #666;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    line-height: 1px;
+    letter-spacing: normal;
+  
+  
+  }
+/* about-us css */
+
+.about-section{
+    display: grid;
+    place-items: center;
+    margin-top: -2rem;
+  }
+  
+  .about-heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px
+  }
+  
+  .about-paragraph {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  
+  }
+  
+  
+  .about-section:nth-child(1) {
+      font-size: 30px;
+    
+  }
+   span:target {
+    border: 3px solid grey;
+    opacity: 0.5;
+   }
+  
+  .about-container{
+      height: 200px;
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: 100px 100px;
+  
+  }
+  .about .img{
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      margin: 25px 30px 0px 40px;
+      border: 2px solid #d8d8d8;
+      transition:transform 0.1s ease-in-out,box-shadow 0.1s ease-in-out ;
+  }
+  .about .img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0px 10px #555353;
+  }
+  .about a{
+    color: inherit;
+  }
+  .about span{
+    font-family: HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1rem;
+      font-size: 15px;
+      margin: 20px 35px 50px 50px;
+      white-space: normal;
+      line-height: normal;
+      color: #333;
+  
+  }
+
+  /*Footer------*/
+
+footer {
+    background-color: #333;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+.container {
+    position: relative;
+    width: 70%;
+    display: flex;
+    left: 170px;
+    margin-top:10px ;
+}
+
+
+.container>div {
+    width: 400px;
+}
+
+.container>div .heading {
+    position: relative;
+    right: 80px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container>div ul li  {
+    margin-bottom: 5px;
+    color: #a9a9a9;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+.container > div ul li a{
+    text-decoration: none;
+}
+a {
+    color: #a9a9a9;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container>div ul li a:hover {
+    background: #666;
+    text-decoration: underline;
+}
+
+
+hr {
+    margin: 15px 0;
+    width: 70%;
+    position: relative;
+    left: 170px; 
+}
+.container3{
+    position: relative;
+    width: 70%;
+    display: flex;
+    left: 170px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cont1{
+    display: flex;
+    gap: 100px;
+}
+.cont1a{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cont1a h3{
+    color: white;
+}
+.cont1a p{
+    color: #a9a9a9;
+    font-size: 14px;
+}
+.cont1a a{
+    text-decoration: none;
+}
+.cont1a a:hover{
+    background: #666;
+    text-decoration: underline;
+}
+.cont2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+   
+    
+
+}
+.cont2a{
+    display: flex;
+    gap: 10px;
+}
+.cont2a input{
+    height: 40px;
+    width: 210px;
+    border: none;
+    border-radius: 3px;
+}
+.cont2a input::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.cont2a button{
+    width: 100px;
+    height: 40px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+}
+.cont2a button:hover{
+    background: white;
+    color: black;
+}
+.cont2b{
+    position: relative;
+    right: 20px;
+}
+
+.cont2c{
+    display: flex;
+    gap: 5px;
+}
+.cont2c:hover{
+    cursor: pointer;
+}
+
+
+.cont2c img{
+    height: 38px;
+    width: 38px;
+    border: 1px solid black;
+    background: #212121;
+}
+.cont3{
+    color:hsl(0, 0%, 66%);
+    font-size: 13px;
+}
+.cont3 p{
+    width: 35%;
+}
+.cont4{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: space-between;
+
+}
+.cont4 img{
+    width: 250px;
+}
+.container4{
+    position: relative;
+    width: 70%;
+    display: flex;
+    left: 170px;
+    top: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.contain1{
+    display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.contain1a{
+    display: flex;
+    gap: 10px;
+}
+.contain1a :hover{
+    background: #666;
+    text-decoration: underline;
+}
+.contain1b{
+    position: relative;
+    top: 10px;
+    color: white;
+}
+.contain2{
+    position: relative;
+    left: 90px;
+    height: 160px;
+    width: 68px;
+    background: #d71921;
+    bottom: 40px;
+    
+}
+.contain2 img{
+    position: relative;
+    top: 5px;
+    width: 70px;
+}
+
+
+
+ /* media query */
+ 
+ @media (min-width:260px) and (max-width:374px){
+     .emirate-container{
+         min-height: 100vh;
+         width: 100%;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+        
+     }
+     .emirate-container-image{
+         background-image: url(../media/emirates-premium-economy-seat-w1920x480.jpg);
+         background-size: cover;
+         background-position: top;
+         position: relative;
+         width:100%;
+         overflow: hidden;
+         display: block;
+         height: 460px;
+         filter: brightness(50%);
+     }
+     .product-container{
+         top: 250px;
+         height: 190px;
+         width: 90%;
+         left: 20px;
+         border-radius: 5px;
+         
+     }
+ 
+     .product-item1{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         height: auto;
+         text-align: center;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border: none;
+ 
+ 
+     }
+     .product-item1 >div{
+         display: flex;
+         flex-direction: column;
+         height: 85px;
+         width: 103px;
+         align-items: center;
+         position: relative;
+         text-align: center;
+     }
+    
+     .product-item1 > div:first-child{
+         border-bottom-width: 1px ;
+         color: #555353;
+         font-weight: 300;
+         border-bottom-color:#ccc ;
+     }
+        
+     .product-item1 > div > i{
+         padding-top: 4px;
+     }
+     .product-item2,
+     .product-item3,.product-item4{
+         display: none;
+     }
+     
+ 
+ 
+     .service{
+         width: 90%;
+         height: auto;
+         position: relative;
+         background: white;
+         top: -1px;
+         left: 20px;
+         display: grid;
+         align-items: center;
+         text-align: center;
+     
+     }
+     .service-item{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 2px;
+         align-items: center; 
+         justify-content: center;
+         color: #555353;
+         
+         
+     }
+     
+     .items{
+         height: 80px;
+         width: 85px;
+         padding: 10px;
+         align-items: center;
+         border: transparent;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         font-weight: 600;
+     }
+     
+     .icons{
+         font-size: 22px;
+         text-align: center;
+         margin-top: 10px;
+         font-weight: 600;
+         
+     
+     }
+     .icon-items a{
+         font-size: 13px;
+         margin-right: 10px;
+         color: #555353;
+         
+     }
+     
+     .items:hover{
+         color: black;
+         font-weight: 500;
+     }
+     .items:hover .icon-items a{
+         color: black;
+         font-weight: 600;
+     }
+     .items:not(:nth-child(-n+3)){
+         display: none;
+     }
+ 
+     .image{
+         position: relative;
+         background-image: url(../media/background-test-tier.png);
+         background-repeat: no-repeat;
+         height: 180px;
+         width: 90%;
+         top:30px;
+         left: 20px;
+         background-color: #0c0b0b;
+         border-radius: 5px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         color: white;
+         
+     }
+     .image::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background-color: rgba(0,0,0,0.5);
+         border-radius: 5px;
+ 
+     }
+     
+     .image img{
+         position:relative;
+         height: 150px;
+         width: 200px;
+         bottom: -15px;
+         
+         border-color: white;
+     }
+     .image-text{
+         color: white;
+         filter: brightness(100%);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         /* margin: 2px 3px; */
+         place-items: center;
+ 
+     }
+     .image-text h3{
+         text-transform: capitalize;
+         font-size: 15px;
+         margin-bottom: 5px;
+         
+     }
+     .image-text p{
+         font-size: 10px;
+         padding: 3px 10px;
+         
+     }
+     .image button{
+         margin-top: 2px;
+         margin-right: 8px;
+         background: white;
+         filter: brightness(100%);
+         border: none;
+         height: 30px;
+         width: 150px;
+         border-radius: 3px;
+         font-weight: 600;
+     }
+     
+ }
+ 
+  
+ @media (min-width:375px) and (max-width:412px){
+ 
+     .emirate-container{
+         min-height: 100vh;
+         width: 100%;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+        
+     }
+     .emirate-container-image{
+         background-image: url(../media/emirates-premium-economy-seat-w1920x480.jpg);
+         background-size: cover;
+         background-position: top;
+         position: relative;
+         width:100%;
+         overflow: hidden;
+         display: block;
+         height: 460px;
+         filter: brightness(50%);
+     }
+     .product-container{
+         top: 250px;
+         height: 190px;
+         width: 95%;
+         left: 10px;
+         border-radius: 5px;
+         
+     }
+ 
+     .product-item1{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         height: auto;
+         text-align: center;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border: none;
+ 
+ 
+     }
+     .product-item1 >div{
+         display: flex;
+         flex-direction: column;
+         height: 82px;
+         width: 148px;
+         align-items: center;
+         position: relative;
+         text-align: center;
+     }
+    
+     .product-item1 > div:first-child{
+         border-bottom-width: 1px ;
+         color: #555353;
+         font-weight: 300;
+         border-bottom-color:#ccc ;
+     }
+        
+     .product-item1 > div > i{
+         padding-top: 4px;
+     }
+     .product-item2,
+     .product-item3,.product-item4{
+         display: none;
+     }
+ 
+ 
+     .product-item2,
+     .product-item3,
+     .product-item4{
+         display: none;
+     }
+ 
+ 
+     .service{
+         width: 90%;
+         height: auto;
+         position: relative;
+         background: white;
+         top: -1px;
+         left: 20px;
+         display: grid;
+         align-items: center;
+         text-align: center;
+     
+     }
+     .service-item{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 2px;
+         align-items: center; 
+         justify-content: center;
+         color: #555353;
+         
+         
+     }
+     
+     .items{
+         height: 80px;
+         width: 90px;
+         padding: 10px;
+         align-items: center;
+         border: transparent;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         font-weight: 600;
+     }
+     
+     .icons{
+         font-size: 22px;
+         text-align: center;
+         margin-top: 10px;
+         font-weight: 600;
+         
+     
+     }
+     .icon-items a{
+         font-size: 13px;
+         margin-right: 10px;
+         color: #555353;
+         
+     }
+     
+     .items:hover{
+         color: black;
+         font-weight: 500;
+     }
+     .items:hover .icon-items a{
+         color: black;
+         font-weight: 600;
+     }
+     .items:not(:nth-child(-n+3)){
+         display: none;
+     }
+ 
+     .image{
+         position: relative;
+         background-image: url(../media/background-test-tier.png);
+         background-repeat: no-repeat;
+         height: 180px;
+         width: 90%;
+         top:30px;
+         left: 20px;
+         background-color: #0c0b0b;
+         border-radius: 5px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         color: white;
+         
+     }
+     .image::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background-color: rgba(0,0,0,0.5);
+         border-radius: 5px;
+ 
+     }
+     
+     .image img{
+         position:relative;
+         height: 150px;
+         width: 200px;
+         bottom: -15px;
+         
+         border-color: white;
+     }
+     .image-text{
+         color: white;
+         filter: brightness(100%);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         /* margin: 2px 3px; */
+         place-items: center;
+ 
+     }
+     .image-text h3{
+         text-transform: capitalize;
+         font-size: 15px;
+         margin-bottom: 5px;
+         
+     }
+     .image-text p{
+         font-size: 10px;
+         padding: 3px 10px;
+         
+     }
+     .image button{
+         margin-top: 2px;
+         margin-right: 8px;
+         background: white;
+         filter: brightness(100%);
+         border: none;
+         height: 30px;
+         width: 150px;
+         border-radius: 3px;
+         font-weight: 600;
+     }
+     
+ } 
+ 
+ @media (min-width:413px) and (max-width:530px){
+ 
+     .emirate-container{
+         min-height: 100vh;
+         width: 100%;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+        
+     }
+     .emirate-container-image{
+         background-image: url(../media/emirates-premium-economy-seat-w1920x480.jpg);
+         background-size: cover;
+         background-position: top;
+         position: relative;
+         width:100%;
+         overflow: hidden;
+         display: block;
+         height: 460px;
+         filter: brightness(50%);
+     }
+     .product-container{
+         top: 240px;
+         height: 200px;
+         width:90%;
+         left: 26px;
+         border-radius: 5px;
+         
+     }
+ 
+     .product-item1{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         height: auto;
+         text-align: center;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border: none;
+ 
+ 
+     }
+     .product-item1 >div{
+         display: flex;
+         flex-direction: column;
+         height: 89px;
+         width: 135px;
+         align-items: center;
+         position: relative;
+         text-align: center;
+     }
+    
+     .product-item1 > div:first-child{
+         border-bottom-width: 1px ;
+         color: #555353;
+         font-weight: 300;
+         border-bottom-color:#ccc ;
+     }
+        
+     .product-item1 > div > i{
+         padding-top: 4px;
+     }
+     .product-item2,
+     .product-item3,.product-item4{
+         display: none;
+     }
+ 
+ 
+     .product-item2,
+     .product-item3,
+     .product-item4{
+         display: none;
+     }
+ 
+ 
+     .service{
+         width: 90%;
+         height: auto;
+         position: relative;
+         background: white;
+         top: -1px;
+         left: 26px;
+         display: grid;
+         align-items: center;
+         text-align: center;
+     
+     }
+     .service-item{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 2px;
+         align-items: center; 
+         justify-content: center;
+         color: #555353;
+         
+         
+     }
+     
+     .items{
+         height: 80px;
+         width: 120px;
+         padding: 10px;
+         align-items: center;
+         border: transparent;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         font-weight: 600;
+     }
+     
+     .icons{
+         font-size: 22px;
+         text-align: center;
+         margin-top: 10px;
+         font-weight: 600;
+         
+     
+     }
+     .icon-items a{
+         font-size: 13px;
+         margin-right: 10px;
+         color: #555353;
+         
+     }
+     
+     .items:hover{
+         color: black;
+         font-weight: 500;
+     }
+     .items:hover .icon-items a{
+         color: black;
+         font-weight: 600;
+     }
+     .items:not(:nth-child(-n+3)){
+         display: none;
+     }
+ 
+     .image{
+         position: relative;
+         background-image: url(../media/background-test-tier.png);
+         background-repeat: no-repeat;
+         height: 180px;
+         width: 90%;
+         top:30px;
+         left: 26px;
+         background-color: #0c0b0b;
+         border-radius: 5px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         color: white;
+         
+     }
+     .image::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background-color: rgba(0,0,0,0.5);
+         border-radius: 5px;
+ 
+     }
+     
+     .image img{
+         position:relative;
+         height: 150px;
+         width: 200px;
+         bottom: -15px;
+         
+         border-color: white;
+     }
+     .image-text{
+         color: white;
+         filter: brightness(100%);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         /* margin: 2px 3px; */
+         place-items: center;
+ 
+     }
+     .image-text h3{
+         text-transform: capitalize;
+         font-size: 15px;
+         margin-bottom: 5px;
+         
+     }
+     .image-text p{
+         font-size: 10px;
+         padding: 3px 10px;
+         
+     }
+     .image button{
+         margin-top: 2px;
+         margin-right: 8px;
+         background: white;
+         filter: brightness(100%);
+         border: none;
+         height: 30px;
+         width: 150px;
+         border-radius: 3px;
+         font-weight: 600;
+     }
+     
+ } 
+ 
+ @media (min-width:531px) and (max-width:599px){
+ 
+     .emirate-container{
+         min-height: 100vh;
+         width: 100%;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+        
+     }
+     .emirate-container-image{
+         background-image: url(../media/emirates-premium-economy-seat-w1920x480.jpg);
+         background-size: cover;
+         background-position: top;
+         position: relative;
+         width:100%;
+         overflow: hidden;
+         display: block;
+         height: 460px;
+         filter: brightness(50%);
+     }
+     .product-container{
+         top: 180px;
+         height: 209px;
+         width:90%;
+         left: 30px;
+         border-radius: 5px;
+         
+     }
+ 
+     .product-item1{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         height: auto;
+         text-align: center;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border: none;
+ 
+ 
+     }
+     .product-item1 >div{
+         display: flex;
+         flex-direction: column;
+         height: 91px;
+         width: 182px;
+         align-items: center;
+         position: relative;
+         text-align: center;
+     }
+    
+     .product-item1 > div:first-child{
+         border-bottom-width: 1px ;
+         color: #555353;
+         font-weight: 300;
+         border-bottom-color:#ccc ;
+     }
+        
+     .product-item1 > div > i{
+         padding-top: 4px;
+     }
+     .product-item2,
+     .product-item3,.product-item4{
+         display: none;
+     }
+ 
+ 
+     .product-item2,
+     .product-item3,
+     .product-item4{
+         display: none;
+     }
+ 
+ 
+     .service{
+         width: 90%;
+         height: auto;
+         position: relative;
+         background: white;
+         top: -1px;
+         left: 26px;
+         display: grid;
+         align-items: center;
+         text-align: center;
+     
+     }
+     .service-item{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 2px;
+         align-items: center; 
+         justify-content: center;
+         color: #555353;
+         
+         
+     }
+     
+     .items{
+         height: 80px;
+         width: 120px;
+         padding: 10px;
+         align-items: center;
+         border: transparent;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         font-weight: 600;
+     }
+     
+     .icons{
+         font-size: 22px;
+         text-align: center;
+         margin-top: 10px;
+         font-weight: 600;
+         
+     
+     }
+     .icon-items a{
+         font-size: 13px;
+         margin-right: 10px;
+         color: #555353;
+         
+     }
+     
+     .items:hover{
+         color: black;
+         font-weight: 500;
+     }
+     .items:hover .icon-items a{
+         color: black;
+         font-weight: 600;
+     }
+     .items:not(:nth-child(-n+3)){
+         display: none;
+     }
+ 
+     .image{
+         position: relative;
+         background-image: url(../media/background-test-tier.png);
+         background-repeat: no-repeat;
+         height: 180px;
+         width: 90%;
+         top:30px;
+         left: 26px;
+         background-color: #0c0b0b;
+         border-radius: 5px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         color: white;
+         
+     }
+     .image::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background-color: rgba(0,0,0,0.5);
+         border-radius: 5px;
+ 
+     }
+     
+     .image img{
+         position:relative;
+         height: 150px;
+         width: 200px;
+         bottom: -15px;
+         
+         border-color: white;
+     }
+     .image-text{
+         color: white;
+         filter: brightness(100%);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         /* margin: 2px 3px; */
+         place-items: center;
+ 
+     }
+     .image-text h3{
+         text-transform: capitalize;
+         font-size: 15px;
+         margin-bottom: 5px;
+         
+     }
+     .image-text p{
+         font-size: 10px;
+         padding: 3px 10px;
+         
+     }
+     .image button{
+         margin-top: 2px;
+         margin-right: 8px;
+         background: white;
+         filter: brightness(100%);
+         border: none;
+         height: 30px;
+         width: 150px;
+         border-radius: 3px;
+         font-weight: 600;
+     }
+     
+ } 
+  
+ @media (min-width:600px) and (max-width:769px){
+ 
+     .emirate-container{
+         min-height: 100vh;
+         width: 100%;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+        
+     }
+     .emirate-container-image{
+         background-image: url(../media/emirates-premium-economy-seat-w1920x480.jpg);
+         background-size: cover;
+         background-position: top;
+         position: relative;
+         width:100%;
+         overflow: hidden;
+         display: block;
+         height: 460px;
+         filter: brightness(50%);
+     }
+     .product-container{
+         top: 180px;
+         height: 240px;
+         width:90%;
+         left: 34px;
+         border-radius: 5px;
+         font-size: 20px;
+         
+     }
+ 
+     .product-item1{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         height: auto;
+         text-align: center;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border: none;
+ 
+ 
+     }
+     .product-item1 >div{
+         display: flex;
+         flex-direction: column;
+         height: 107px;
+         width: 285px;
+         align-items: center;
+         position: relative;
+         text-align: center;
+     }
+    
+     .product-item1 > div:first-child{
+         border-bottom-width: 1px ;
+         color: #555353;
+         font-weight: 300;
+         border-bottom-color:#ccc ;
+     }
+        
+     .product-item1 > div > i{
+         padding-top: 4px;
+     }
+     .product-item2,
+     .product-item3,.product-item4{
+         display: none;
+     }
+ 
+ 
+     .product-item2,
+     .product-item3,
+     .product-item4{
+         display: none;
+     }
+ 
+ 
+     .service{
+         width: 90%;
+         height: auto;
+         position: relative;
+         background: white;
+         top: -1px;
+         left: 34px;
+         display: grid;
+         align-items: center;
+         text-align: center;
+     
+     }
+     .service-item{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 2px;
+         align-items: center; 
+         justify-content: center;
+         color: #555353;
+         
+         
+     }
+     
+     .items{
+         height: 80px;
+         width: 203px;
+         padding: 10px;
+         align-items: center;
+         border: transparent;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         font-weight: 600;
+     }
+     
+     .icons{
+         font-size: 22px;
+         text-align: center;
+         margin-top: 10px;
+         font-weight: 600;
+         
+     
+     }
+     .icon-items a{
+         font-size: 20px;
+         margin-right: 10px;
+         color: #555353;
+         
+     }
+     
+     .items:hover{
+         color: black;
+         font-weight: 500;
+     }
+     .items:hover .icon-items a{
+         color: black;
+         font-weight: 600;
+     }
+     .items:not(:nth-child(-n+3)){
+         display: none;
+     }
+ 
+     .image{
+         position: relative;
+         background-image: url(../media/background-test-tier.png);
+         background-repeat: no-repeat;
+         height: 180px;
+         width: 90%;
+         top:30px;
+         left: 26px;
+         background-color: #0c0b0b;
+         border-radius: 5px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         color: white;
+         
+     }
+     .image::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background-color: rgba(0,0,0,0.5);
+         border-radius: 5px;
+ 
+     }
+     
+     .image img{
+         position:relative;
+         height: 150px;
+         width: 200px;
+         bottom: -15px;
+         
+         border-color: white;
+     }
+     .image-text{
+         color: white;
+         filter: brightness(100%);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         /* margin: 2px 3px; */
+         place-items: center;
+ 
+     }
+     .image-text h3{
+         text-transform: capitalize;
+         font-size: 15px;
+         margin-bottom: 5px;
+         
+     }
+     .image-text p{
+         font-size: 10px;
+         padding: 3px 10px;
+         
+     }
+     .image button{
+         margin-top: 2px;
+         margin-right: 8px;
+         background: white;
+         filter: brightness(100%);
+         border: none;
+         height: 30px;
+         width: 150px;
+         border-radius: 3px;
+         font-weight: 600;
+     }
+     
+ } 
+ 
+ @media (min-width:800px) and (max-width:1200px){
+     .emirate-container{
+         height: 100vh;
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+      
+      }
+      .emirate-container-image{
+          background-image: url(../media/emirates-premium-economy-seat-w1920x480.jpg);
+          background-size: cover;
+          background-position: top;
+          position: relative;
+          width:100%;
+          overflow: hidden;
+          display: block;
+          height: 460px;
+      }
+      .product-container{
+          width: 95%;
+          position: absolute;
+          top: 34%;
+          left: 3%;
+          background: white;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .products{
+          display: flex;
+          flex-direction: column;
+         position: relative;
+        
+      }
+      .product-item1{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          
+      }
+      .product-item1 >div{
+          display: flex;
+          flex-direction: row;
+          height: 50px;
+          width: 135px;
+          align-items: center;
+          gap: 6px;
+          padding: 5px 28.7px;
+          position: relative;
+          border: 1px solid #ccc;
+      
+      }
+      
+      .product-item1 >div:not(:first-child){
+          color: #555353;
+      } 
+      .product-item1 >div:first-child{
+          border-bottom-width: 3px;
+          border-bottom-color:#c60c30 ;
+          font-weight: 600;
+      }
+      .product-item1 >div:hover{
+          box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+          /* transition: box-shadow 0.2s ease; */
+      }
+ 
+      .product-item1 >div:hover{
+         box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+         /* transition: box-shadow 0.2s ease; */
+     }
+     
+     .product-item2{
+       margin: 10px;
+     }
+     .product-item2 > div{
+         display: flex;
+         flex-direction: row;
+         
+     }
+     .product-item2 > div > div{
+         display: flex;
+         flex-direction: row;
+         height: 30px;
+         width: 165px;
+         border: 1px solid #969595;
+         border-radius: 2px;
+         text-align: center;
+         align-items: center;  
+         overflow: hidden; 
+         
+     }
+     .product-item2 > div :hover{
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     }
+     
+     
+     .product-item2 > div >div > p >i{ 
+         margin-right: 5px;
+         color: #c60c30;
+         font-weight: bold;
+     }
+     .product-item2 > div > div > p{
+         margin: 0;
+         padding: 30px;
+     }
+     .product-item2 > div > div >.para{
+         font-weight: 600;
+     }
+     .product-item3 > a{
+         margin: 10px;
+         float: right;
+         color: #c60c30;
+         font-size: 15px;
+     }
+     .product-item3 > a:hover{
+         background:rgb(231, 225, 225);
+     
+     }
+     .product-item3 .fa{
+         font-size: 10px;
+         margin: 5px;
+     }
+     .product-item4{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         margin-bottom: 30px;
+         color: #555353;
+         font-weight: lighter;
+         
+     }
+     .product-item4 > .input{
+         display: flex;
+         flex-direction: column;
+         height: 70px;
+         width: 260px;
+         border: 1px solid #969595;
+         border-radius: 2px;
+         /* padding-left: 30px; */
+     }
+     .product-item4 >.input >p{
+         margin-top: 1px;
+         font-size: 14px;
+     }
+     .product-item4 .inp{
+         display: flex;
+         flex-direction: row;
+         margin-top: -23px;
+     }
+     .inp > p{
+         font-size: 20.1px;
+     }
+      .product-item4 .fa-xmark{
+         margin-left: 100px;
+         margin-top: 23px;
+      }
+      .product-item4 > .input  .fa-location-dot{
+         font-size: 18px;
+         margin: 20px 5px;
+         
+         
+      }
+     
+     .product-item4 > .input:hover{
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     }
+     
+     .product-item4 >.input2{
+         height: 70px;
+         width:260px ;
+         border: 1px solid #969595;
+         border-radius: 2px;
+         padding-left: 30px;
+         color: #555353;
+     }
+     .input2 p{
+         font-size: 20px;
+         padding-top: 10px;
+     }
+     
+     .product-item4 > .input2:hover{
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     }
+     .product-item4 button{
+         height: 70px;
+         width: 130px;
+         background-color:#c60c30;
+         color: white;
+         font-size: 16px;
+         text-transform: capitalize;
+         border: none;
+         border-radius: 3px;
+     }
+     .product-item4  button:hover{
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+     }
+ 
+     .service{
+     width: 95%;
+     height: auto;
+     position: relative;
+     background: white;
+     top: 220px;
+     left: 3%;
+     display: grid;
+     align-items: center;
+     text-align: center;
+     
+ 
+     }
+      .service-item{
+     display: flex;
+     flex-direction: row;
+     align-items: center; 
+     justify-content: center;
+     color: #555353;
+     
+ }
+ 
+     .items{
+     height: 100px;
+     width: 75px;
+     padding: 10px;
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;  
+     text-align: center;
+     border: 1px solid #969595;
+     }
+ 
+   .icons{
+     font-size: 22px;
+     text-align: center;
+     margin-top: 10px;
+     
+ 
+   }
+    .icon-items a{
+     font-size: 14px;
+     padding-right: 10px;
+     color: #555353;
+     
+    }
+ 
+ 
+    .items:hover{
+     color: black;
+     font-weight: 500;
+     border-bottom: 3px solid #c60c30;
+     }
+    .items:hover .icon-items a{
+     color: black;
+     font-weight: 600;
+     }
+     .image{
+     position: relative;
+     background-image: url(../media/background-test-tier.png);
+     background-repeat: no-repeat;
+     height: 80px;
+     width: 95%;
+     top: 240px;
+     left: 25px;
+     background-color: #0c0b0b;
+     /* filter: brightness(50%); */
+     border-radius: 5px;
+     display: flex;
+     justify-content: space-around;
+     color: white;
+     
+ }
+ .image::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(0,0,0,0.5);
+     border-radius: 5px;
+ }
+ 
+ .image img{
+     position:relative;
+     height: 110px;
+     width: 250px;
+     bottom: 20%;
+     left: 10px;
+     border-color: white;
+ }
+ .image-text{
+     color: white;
+     filter: brightness(100%);
+     margin-left: 10px;
+ }
+ .image-text h3{
+     text-transform: capitalize;
+     margin-top: 12px ;
+ }
+ .image-text p{
+     margin-top: -8px;
+     font-size: 14px;
+ }
+ .image button{
+     margin-top: 30px;
+     margin-right: 9px;
+     background: white;
+     filter: brightness(100%);
+     border: none;
+     height: 30px;
+     width: 150px;
+     border-radius: 3px;
+     font-weight: 600;
+ }
+     
+ }
+
